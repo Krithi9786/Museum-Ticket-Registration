@@ -1,0 +1,68 @@
+127.0.0.1:6379> ping
+PONG
+127.0.0.1:6379> SADD VIS_DETAILS : name ram sam anu
+(integer) 5
+127.0.0.1:6379> SADD VIS_DETAILS : age 30 53 10
+(integer) 4
+127.0.0.1:6379> SADD VIS_DETAILS : date june23 july23 march24
+(integer) 4
+127.0.0.1:6379> SADD MUS_DETAILS : name fort waxworld gedeecar
+(integer) 5
+127.0.0.1:6379> SADD MUS_DETAILS : location chennai ooty coimbatore
+(integer) 4
+127.0.0.1:6379> SADD MUS_DETAILS : time 9to4 10to5 9to3
+(integer) 4
+127.0.0.1:6379> SADD STA_DETAILS : name rani lakshmi selvan
+(integer) 5
+127.0.0.1:6379> SADD STA_DETAILS : id 101 102 103
+(integer) 4
+127.0.0.1:6379> SADD STA_DETAILS : age 31 33 35
+(integer) 4
+127.0.0.1:6379> SADD STA_DETAILS : salary 20000 23000 25000
+(integer) 4
+127.0.0.1:6379> SMEMBERS VIS_DETAILS
+ 1) "date"
+ 2) "sam"
+ 3) "name"
+ 4) ":"
+ 5) "53"
+ 6) "anu"
+ 7) "july23"
+ 8) "10"
+ 9) "age"
+10) "30"
+11) "june23"
+12) "ram"
+13) "march24"
+127.0.0.1:6379> SMEMBERS MUS_DETAILS
+ 1) "time"
+ 2) "9to3"
+ 3) "name"
+ 4) ":"
+ 5) "10to5"
+ 6) "9to4"
+ 7) "location"
+ 8) "gedeecar"
+ 9) "chennai"
+10) "coimbatore"
+11) "waxworld"
+12) "fort"
+13) "ooty"
+127.0.0.1:6379> SMEMBERS STA_DETAILS
+ 1) "23000"
+ 2) "33"
+ 3) "lakshmi"
+ 4) "rani"
+ 5) "name"
+ 6) "103"
+ 7) "101"
+ 8) "salary"
+ 9) ":"
+10) "20000"
+11) "35"
+12) "age"
+13) "selvan"
+14) "31"
+15) "id"
+16) "102"
+17) "25000"
